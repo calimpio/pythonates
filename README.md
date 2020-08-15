@@ -1,0 +1,3 @@
+# Pythonates
+
+- $ `python main.py`
