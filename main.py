@@ -1,15 +1,11 @@
-from subprocess import call 
-from time import sleep
-noOver = True
-while noOver:
-    _ = call("clear")
-    print("Bievendino")
-    print("1. decir hola mundo")
-    print("2. salir")
-    op = raw_input("elejir opcion: ")
+from point import Point
 
-    if op == "1":
-        print("hola mundo")
-        sleep(2)
-    if op == "2":
-        noOver = False
+a = Point(20,20)
+b = Point(36,25)
+c = Point(a.x-b.x, a.y-b.y)
+
+print 'x: ', c.x, ', y: ', c.y
+
+
+
+
