@@ -7,3 +7,6 @@ class Point:
     
     def __str__(self):
         return 'x: ' + str(self.x) + ', y: ' + str(self.y)
+
+    def __pow__(self, power):
+        return Point(self.x**power, self.y**power)
