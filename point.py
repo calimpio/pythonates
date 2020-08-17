@@ -10,3 +10,12 @@ class Point:
 
     def __pow__(self, power):
         return Point(self.x**power, self.y**power)
+
+    def __mul__(self,other):
+        # other is integer or other is float?
+        if isinstance(other, int) or isinstance(other,float):
+            return Point(self.x*other, self.y*other)
+        # other is Point?
+        if isinstance(other, Point):
+            return Point(self.x*other.x, self.y*other.y)
+        return None

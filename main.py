@@ -8,6 +8,10 @@ c = a - b
 print c
 d = c ** 2
 print d
+f = a * b
+g = a * 6
+print f, g
+
 
 
 
