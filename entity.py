@@ -13,4 +13,4 @@ class Entity:
             self.position = Point()
 
     def __str__(self):
-        return '{"'+self.__class__.__name__+'": {"name": "' + self.name + '","position": ' + str(self.position) +'}}'
+        return '{"'+self.__class__.__name__+'": {"name": "' + self.name + '", "position": ' + str(self.position) +'}}'
