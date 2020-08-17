@@ -1,12 +1,12 @@
 class Point:
-    def __init__(self,x, y):
+    def __init__(self,x = 0.0, y = 0.0):
         self.x = x
         self.y = y
     def __sub__(self, other):
         return Point(self.x-other.x, self.y-other.y)
     
     def __str__(self):
-        return 'x: ' + str(self.x) + ', y: ' + str(self.y)
+        return '{"x": ' + str(self.x) + ', "y": ' + str(self.y)+'}'
 
     def __pow__(self, power):
         return Point(self.x**power, self.y**power)
