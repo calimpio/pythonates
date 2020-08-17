@@ -16,3 +16,5 @@ for ob in objects:
     print ob
 
 print 'in box: ', box
+box.setName("new name!")
+print box
